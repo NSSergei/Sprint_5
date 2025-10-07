@@ -1,8 +1,8 @@
-package Parcel;
+package parcel;
 
 public class PerishableParcel extends  Parcel { //Скоропортящиеся
     private int timeToLive;
-    PerishableParcel(String description, int weight, String deliveryAddress, int sendDay, ParcelType type, int timeToLive) {
+    public PerishableParcel(String description, int weight, String deliveryAddress, int sendDay, ParcelType type, int timeToLive) {
         super(description, weight, deliveryAddress, sendDay,type);
         this.timeToLive = timeToLive;
     }
@@ -23,11 +23,11 @@ public class PerishableParcel extends  Parcel { //Скоропортящиеся
     @Override
     public String toString() {
         return  "Description{" +
-                "description = " + getDescription() + '\'' +
-                ", weight =" + getWeight() +
-                ", deliveryAddress = " + getDeliveryAddress() +
-                ", sendDay = " + getSendDay() +
-                ", ParcelType type = " + getType() +
+                "description = " + description + '\'' +
+                ", weight =" + weight +
+                ", deliveryAddress = " + deliveryAddress +
+                ", sendDay = " + sendDay +
+                ", ParcelType type = " + type +
                 ", TimeToLive = " + timeToLive  +
                 "}";
     }

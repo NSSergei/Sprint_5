@@ -1,7 +1,7 @@
-package Parcel;
+package parcel;
 
 public enum ParcelType {
-    STANDART(2),
+    STANDARD(2),
     PERISHABLE(3),
     FRAGILE(4);
 

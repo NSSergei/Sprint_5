@@ -1,11 +1,11 @@
-package Parcel;
+package parcel;
 
 public abstract class Parcel {
-    private String description;
-    private int weight;
-    private String deliveryAddress;
-    private int sendDay;
-    private ParcelType type;
+    protected String description;
+    protected int weight;
+    protected String deliveryAddress;
+    protected int sendDay;
+    protected ParcelType type;
 
     Parcel(String description,int weight,String deliveryAddress,int sendDay,ParcelType type){
         this.description = description;
